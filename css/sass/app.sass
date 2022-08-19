@@ -31,7 +31,7 @@ body
         gap: 24px
         margin: 50px auto 0 auto
 
-        .card
+        .card, .card-faceup
             width: 120px
             height: 150px
             border-radius: 5px
@@ -41,9 +41,19 @@ body
             align-items: center
             justify-content: center
             padding: 10px
+            transform: rotateY(0deg)
+            transition: transform 1s
+
+            &.faceup 
+                transform: rotateY(180deg)
+                img
+                    transform: rotateY(180deg)
 
             img
                 width: 100%
                 object-fit: cover
+                transform: rotateY(0deg)
+            
+          
 
 
