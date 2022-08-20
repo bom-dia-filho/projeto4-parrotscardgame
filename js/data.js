@@ -1,4 +1,4 @@
-const arts = [
+const data = [
   {
     cover: "./assets/cover.png",
     faceup: "./assets/bobrossparrot.gif",
@@ -28,5 +28,3 @@ const arts = [
     faceup: "./assets/unicornparrot.gif",
   },
 ];
-
-arts.sort(shuffle);

@@ -27,13 +27,11 @@ body {
     font-size: 56px;
   }
 }
-.app .board {
-  display: inline-flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  margin: 50px auto 0 auto;
+.app .field {
+  display: grid;
+  gap: 20px;
 }
-.app .board .card, .app .board .card-faceup {
+.app .field .card, .app .field .card-faceup {
   width: 120px;
   height: 150px;
   border-radius: 5px;
@@ -46,13 +44,13 @@ body {
   transform: rotateY(0deg);
   transition: transform 1s;
 }
-.app .board .card.faceup, .app .board .card-faceup.faceup {
+.app .field .card.faceup, .app .field .card-faceup.faceup {
   transform: rotateY(180deg);
 }
-.app .board .card.faceup img, .app .board .card-faceup.faceup img {
+.app .field .card.faceup img, .app .field .card-faceup.faceup img {
   transform: rotateY(180deg);
 }
-.app .board .card img, .app .board .card-faceup img {
+.app .field .card img, .app .field .card-faceup img {
   width: 100%;
   object-fit: cover;
   transform: rotateY(0deg);

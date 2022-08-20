@@ -1,4 +1,4 @@
-class Relief extends Array {
+class ReavealedCardList extends Array {
   constructor(winGame) {
     super();
     this.winGame = winGame;
@@ -11,16 +11,17 @@ class Relief extends Array {
 
   add(stack) {
     this.lock = true;
-    let card = stack.map((item) => item);
-
-    if (card[0].src === card[1].src) {
-      this.push(card[0]);
+    if (stack[0].src === stack[1].src) {
+      this.push(stack[0]);
       this.winGame(this, stack.plays);
       this.clear(stack);
     } else {
       const flip = setTimeout(() => {
-        card[0].card.flip();
-        card[1].card.flip();
+        stack[0].card.flip();
+        stack[1].card.flip();
+
+        stack[0].card.disabled();
+        stack[1].card.disabled();
         this.clear(stack);
         clearTimeout(flip);
       }, 1000);
