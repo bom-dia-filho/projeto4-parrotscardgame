@@ -27,13 +27,13 @@ body {
     font-size: 56px;
   }
 }
-.app .cards {
+.app .board {
   display: inline-flex;
   flex-wrap: wrap;
   gap: 24px;
   margin: 50px auto 0 auto;
 }
-.app .cards .card, .app .cards .card-faceup {
+.app .board .card, .app .board .card-faceup {
   width: 120px;
   height: 150px;
   border-radius: 5px;
@@ -46,13 +46,13 @@ body {
   transform: rotateY(0deg);
   transition: transform 1s;
 }
-.app .cards .card.faceup, .app .cards .card-faceup.faceup {
+.app .board .card.faceup, .app .board .card-faceup.faceup {
   transform: rotateY(180deg);
 }
-.app .cards .card.faceup img, .app .cards .card-faceup.faceup img {
+.app .board .card.faceup img, .app .board .card-faceup.faceup img {
   transform: rotateY(180deg);
 }
-.app .cards .card img, .app .cards .card-faceup img {
+.app .board .card img, .app .board .card-faceup img {
   width: 100%;
   object-fit: cover;
   transform: rotateY(0deg);
