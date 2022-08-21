@@ -1,6 +1,7 @@
 class CardField extends HTMLElement {
-  constructor(app) {
+  constructor(numberCards) {
     super();
+    this.numberCards = numberCards;
   }
 
   connectedCallback() {
@@ -17,6 +18,8 @@ class CardField extends HTMLElement {
 
     if (windowWidth < 412) n = 1;
     else if (windowWidth > 1000) n = 6;
+
+    if (n >= this.numberCards) n = this.numberCards;
 
     this.style = `grid-template-columns: repeat(${n}, 120px)`;
   }
