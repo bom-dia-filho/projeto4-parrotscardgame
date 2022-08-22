@@ -1,4 +1,4 @@
-const data = [
+const data = DrivenJS.shuffle([
   {
     cover: "./assets/cover.png",
     faceup: "./assets/bobrossparrot.gif",
@@ -27,4 +27,4 @@ const data = [
     cover: "./assets/cover.png",
     faceup: "./assets/unicornparrot.gif",
   },
-];
+]);

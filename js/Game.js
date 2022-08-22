@@ -1,5 +1,3 @@
-const shuffle = () => Math.random() - 0.5;
-
 class Game {
   constructor(app, cardsData) {
     this.app = app;
@@ -35,10 +33,10 @@ class Game {
       ])
       .reduce((prev, curr) => prev.concat(curr), []);
 
-    this.cards.sort(shuffle);
+    this.cards = DrivenJS.shuffle(this.cards);
   }
 
-  anotherOne() {
+  anotherOne() /* DJ KHALED */ {
     this.plays++;
   }
 

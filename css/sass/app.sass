@@ -13,6 +13,10 @@ body
     max-width: 872px
     padding: 40px 15px
 
+    
+        
+
+
     .stopwatch
         position: fixed
         top: 10px
@@ -35,7 +39,7 @@ body
         color: #75B79E
         text-align: center
 
-        @media (min-width: 614px)
+        @media (min-width: 775px)
             & 
                font-size: 56px 
     
@@ -69,6 +73,14 @@ body
                 object-fit: cover
                 transform: rotateY(0deg)
             
-          
+    @media (max-width: 565px)
+
+        h1 
+            margin-top: 30px
+
+        .stopwatch
+            width: 60px
+            height: 60px
+            font-size: 14px  
 
 
